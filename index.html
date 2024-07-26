@@ -4,6 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+  <script type="text/javascript">
+        function redirectToApp() {
+            // const urlParams = new URLSearchParams(window.location.search);
+            // const accessToken = urlParams.get('access_token');
+            // const refreshToken = urlParams.get('refresh_token');
+
+            // if (accessToken && refreshToken) {
+                const redirectUrl = "serivitium://auth-redirect?access_token=access&refresh_token=refresh";
+                // window.location.href = redirectUrl;
+            // } else {
+                // alert("Failed to obtain tokens");
+            // }
+        }
+
+        window.onload = redirectToApp;
+    </script>
 </head>
 <body>
   <h1>Descope React Native Auth</h1>
